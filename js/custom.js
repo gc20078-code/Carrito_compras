@@ -21,6 +21,8 @@ function readTheContent(product){
         image: product.querySelector('img').src,
         title: product.querySelector('h3').textContent,
         price: product.querySelector('.price').textContent,
+         id: product.product.querySelector('a').getAttribute('data-id'),
+        amount: 1
     }
     console.log(infoProduct);
 }
