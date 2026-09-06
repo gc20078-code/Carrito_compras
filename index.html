@@ -1,1 +1,175 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Sin JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="header-title">Mi Tienda</h1>
+            <div class="cart-icon">
+                <span class="cart-count">3</span>
+                <span class="cart-symbol">🛒</span>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Productos -->
+            <section class="products-section">
+                <h2 class="section-title">Productos Disponibles</h2>
+                <div class="products-grid">
+                    <!-- Producto 1 -->
+                    <div class="product-card">
+                        <div class="product-image">📱</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Smartphone X</h3>
+                            <p class="product-description">128GB, 6GB RAM, Cámara 48MP</p>
+                            <p class="product-price">$599.99</p>
+                            <button class="add-to-cart" type="button">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="product-card">
+                        <div class="product-image">💻</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Laptop Pro</h3>
+                            <p class="product-description">15.6", 16GB RAM, SSD 512GB</p>
+                            <p class="product-price">$999.99</p>
+                            <button class="add-to-cart" type="button">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="product-card">
+                        <div class="product-image">🎧</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Auriculares</h3>
+                            <p class="product-description">Bluetooth, Cancelación de ruido</p>
+                            <p class="product-price">$149.99</p>
+                            <button class="add-to-cart" type="button">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <!-- Producto 4 -->
+                    <div class="product-card">
+                        <div class="product-image">⌚</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Smartwatch</h3>
+                            <p class="product-description">GPS, Ritmo cardíaco, Sumergible</p>
+                            <p class="product-price">$249.99</p>
+                            <button class="add-to-cart" type="button">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <!-- Producto 5 -->
+                    <div class="product-card">
+                        <div class="product-image">🎮</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Consola de Juegos</h3>
+                            <p class="product-description">4K, 1TB, Incluye 2 controles</p>
+                            <p class="product-price">$499.99</p>
+                            <button class="add-to-cart" type="button">Agregar al carrito</button>
+                        </div>
+                    </div>
+                    <!-- Producto 6 -->
+                    <div class="product-card">
+                        <div class="product-image">📷</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Cámara Digital</h3>
+                            <p class="product-description">24MP, Lente 18-55mm, 4K video</p>
+                            <p class="product-price">$799.99</p>
+                            <button class="add-to-cart" type="button">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Carrito -->
+            <aside class="cart-section">
+                <h2 class="section-title">Tu Carrito</h2>
+                <div class="cart-items">
+                    <!-- Item 1 -->
+                    <div class="cart-item">
+                        <div class="item-details">
+                            <span class="item-name">Smartphone X</span>
+                            <span class="item-unit-price">$599.99 c/u</span>
+                        </div>
+                        <div class="item-controls">
+                            <button class="quantity-btn" type="button">-</button>
+                            <span class="item-quantity">1</span>
+                            <button class="quantity-btn" type="button">+</button>
+                        </div>
+                        <span class="item-price">$599.99</span>
+                        <button class="remove-item" type="button">×</button>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="cart-item">
+                        <div class="item-details">
+                            <span class="item-name">Laptop Pro</span>
+                            <span class="item-unit-price">$999.99 c/u</span>
+                        </div>
+                        <div class="item-controls">
+                            <button class="quantity-btn" type="button">-</button>
+                            <span class="item-quantity">1</span>
+                            <button class="quantity-btn" type="button">+</button>
+                        </div>
+                        <span class="item-price">$999.99</span>
+                        <button class="remove-item" type="button">×</button>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="cart-item">
+                        <div class="item-details">
+                            <span class="item-name">Auriculares</span>
+                            <span class="item-unit-price">$149.99 c/u</span>
+                        </div>
+                        <div class="item-controls">
+                            <button class="quantity-btn" type="button">-</button>
+                            <span class="item-quantity">2</span>
+                            <button class="quantity-btn" type="button">+</button>
+                        </div>
+                        <span class="item-price">$299.98</span>
+                        <button class="remove-item" type="button">×</button>
+                    </div>
+                </div>
+                
+                <!-- Resumen del carrito -->
+                <div class="cart-summary">
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span>$1,899.96</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Descuento:</span>
+                        <span class="discount">-$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Envío:</span>
+                        <span class="free-shipping">Gratis</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span>$1,899.96</span>
+                    </div>
+                    <button class="checkout-btn" type="button">Finalizar Compra</button>
+                    <button class="clear-cart-btn" type="button">Vaciar Carrito</button>
+                </div>
+            </aside>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Mi Tienda - Todos los derechos reservados</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Términos y Condiciones</a>
+                <a href="#" class="footer-link">Política de Privacidad</a>
+                <a href="#" class="footer-link">Contacto</a>
+            </div>
+        </footer>
+    </div>
+        <!-- Conexión con JavaScript -->
+    <script src="js/custom.js"></script>
+</body>
+</html>
